@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TechNova Elite: computadores, componentes y accesorios tecnológicos de alta gama.">
+  <meta name="theme-color" content="#0f172a">
+  <title>TechNova Elite | Potencia Sin Límites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span><i class="fa-solid fa-bolt me-2"></i>Envío gratis en compras superiores a $500.000</span><span class="d-none d-md-inline">Soporte experto · Compra segura · Garantía oficial</span></div>
+
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio" aria-label="TechNova Elite inicio">
+        <span class="brand-mark"><i class="fa-solid fa-microchip"></i></span>
+        <span>TechNova <strong>Elite</strong></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+      <div id="navMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ofertas">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencias">Experiencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
+          <li class="nav-item"><button class="cart-btn" id="cartButton" aria-label="Ver carrito"><i class="fa-solid fa-bag-shopping"></i><span id="cartCount">0</span></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+          <div class="col-lg-7 reveal">
+            <div class="eyebrow"><span></span> Tecnología sin límites</div>
+            <h1>Encuentra el computador perfecto para llevar tu <em>rendimiento</em> al siguiente nivel</h1>
+            <p class="hero-copy">Equipos de alto desempeño, componentes premium y las mejores marcas para gamers, creadores de contenido y profesionales.</p>
+            <div class="d-flex flex-wrap gap-3 mb-5">
+              <a href="#productos" class="btn btn-primary btn-lg"><i class="fa-solid fa-arrow-right me-2"></i>Ver productos</a>
+              <a href="#ofertas" class="btn btn-outline-light btn-lg">Ver ofertas <i class="fa-solid fa-tag ms-2"></i></a>
+            </div>
+            <div class="hero-stats row g-3">
+              <div class="col-4"><strong>+10K</strong><span>Clientes</span></div>
+              <div class="col-4"><strong>+5K</strong><span>Productos vendidos</span></div>
+              <div class="col-4"><strong>98%</strong><span>Satisfacción</span></div>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block reveal reveal-delay">
+            <div class="hero-product-card">
+              <div class="floating-chip chip-top"><i class="fa-solid fa-shield-halved"></i> Garantía oficial</div>
+              <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1000&q=85" alt="Computador gaming premium">
+              <div class="product-overlay"><span>Edición Elite</span><strong>Potencia que inspira</strong></div>
+              <div class="floating-chip chip-bottom"><i class="fa-solid fa-star"></i> 4.9/5 valoración</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#productos" class="scroll-cue"><span></span> Explorar colección</a>
+    </section>
+
+    <section id="productos" class="section-padding bg-light-soft">
+      <div class="container">
+        <div class="section-heading text-center reveal"><div class="eyebrow dark"><span></span> Selección premium</div><h2>Diseñados para quienes <em>exigen más</em></h2><p>Hardware de alto rendimiento seleccionado para superar tus expectativas.</p></div>
+        <div class="row g-4" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section id="ofertas" class="section-padding offers-section">
+      <div class="container">
+        <div class="offer-banner reveal">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6"><div class="eyebrow"><span></span> Oferta limitada</div><h2>Sube de nivel. <em>Invierte menos.</em></h2><p>Descuentos exclusivos en equipos seleccionados por tiempo limitado.</p><div class="countdown d-flex gap-2" aria-label="Tiempo restante de la oferta"><div><strong id="days">00</strong><small>Días</small></div><b>:</b><div><strong id="hours">00</strong><small>Horas</small></div><b>:</b><div><strong id="minutes">00</strong><small>Min</small></div><b>:</b><div><strong id="seconds">00</strong><small>Seg</small></div></div></div>
+            <div class="col-lg-6"><div class="offer-visual"><div class="discount-badge">Hasta<br><strong>30%</strong><br>OFF</div><img src="https://images.unsplash.com/photo-1593640495253-23196b27a87f?auto=format&fit=crop&w=1000&q=85" alt="Laptop gaming en oferta"></div></div>
+          </div>
+        </div>
+        <div class="row g-4 mt-3" id="offerGrid"></div>
+      </div>
+    </section>
+
+    <section id="experiencias" class="section-padding bg-light-soft">
+      <div class="container">
+        <div class="section-heading text-center reveal"><div class="eyebrow dark"><span></span> Experiencias reales</div><h2>La potencia también se <em>siente</em></h2><p>Lo que dicen quienes ya transformaron su forma de trabajar y jugar.</p></div>
+        <div id="testimonialCarousel" class="carousel slide reveal" data-bs-ride="carousel" data-bs-interval="4500"><div class="carousel-inner" id="testimonialItems"></div><button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Anterior</span></button><button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Siguiente</span></button><div class="carousel-indicators" id="testimonialIndicators"></div></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-padding contact-section">
+      <div class="container"><div class="row align-items-center g-5"><div class="col-lg-6 reveal"><div class="eyebrow"><span></span> Estamos para ayudarte</div><h2>Tu próxima gran <em>experiencia</em> empieza aquí.</h2><p>Cuéntanos qué necesitas y nuestro equipo de especialistas te ayudará a encontrar la configuración ideal.</p><div class="contact-points"><div><i class="fa-solid fa-headset"></i><span><strong>Asesoría experta</strong><small>Recomendaciones a tu medida</small></span></div><div><i class="fa-solid fa-truck-fast"></i><span><strong>Envíos seguros</strong><small>Seguimiento en cada etapa</small></span></div><div><i class="fa-solid fa-lock"></i><span><strong>Compra protegida</strong><small>Pagos 100% seguros</small></span></div></div></div><div class="col-lg-6 reveal reveal-delay"><form class="contact-form" id="contactForm"><h3>Hablemos de tecnología</h3><div class="row g-3"><div class="col-md-6"><label for="name">Nombre</label><input id="name" type="text" placeholder="Tu nombre" required></div><div class="col-md-6"><label for="email">Correo</label><input id="email" type="email" placeholder="tu@email.com" required></div><div class="col-12"><label for="message">¿Qué estás buscando?</label><textarea id="message" rows="4" placeholder="Cuéntanos sobre tu proyecto..."></textarea></div><div class="col-12"><button class="btn btn-primary w-100" type="submit">Enviar consulta <i class="fa-solid fa-paper-plane ms-2"></i></button></div></div></form></div></div></div>
+    </section>
+  </main>
+
+  <footer><div class="container"><div class="row g-4 align-items-center"><div class="col-lg-5"><a class="navbar-brand d-inline-flex align-items-center gap-2 text-white" href="#inicio"><span class="brand-mark"><i class="fa-solid fa-microchip"></i></span><span>TechNova <strong>Elite</strong></span></a><p class="mt-3 mb-0">Potencia Sin Límites.</p></div><div class="col-lg-4"><div class="footer-links"><a href="#productos">Productos</a><a href="#ofertas">Ofertas</a><a href="#experiencias">Experiencias</a><a href="#contacto">Contacto</a></div></div><div class="col-lg-3 text-lg-end"><div class="social-links"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div></div><hr><div class="d-flex flex-wrap justify-content-between gap-2 small"><span>© 2026 TechNova Elite. Todos los derechos reservados.</span><span>Privacidad · Términos · Garantía</span></div></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/573000000000" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><button id="toTop" class="to-top" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button><div id="toast" class="site-toast"><i class="fa-solid fa-circle-check"></i><span></span></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="script.js"></script>
+</body>
+</html>
